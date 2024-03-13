@@ -26,30 +26,67 @@ namespace KPL_MOD4_1302220033_MGHIFARI
             {
                 return "E00";
             }
-            else if (namaBuah == "Blackberry")
+            else if (namaBuah == "Kurma")
             {
-                return "F00";
+                return "K00";
             }
-            else if (namaBuah == "Ceri")
+            else if (namaBuah == "Durian")
             {
-                return "H00";
+                return "L00";
             }
-            else if (namaBuah == "Kelapa")
+            else if (namaBuah == "Anggur")
             {
-                return "I00";
+                return "M00";
             }
-            else if (namaBuah == "Jagung")
+            else if (namaBuah == "Melon")
             {
-                return "J00";
+                return "N00";
+            }
+            else if (namaBuah == "Semangka")
+            {
+                return "O00";
             }
             else
             {
                 return "null";
             }
         }
-
+        public class Move
+        {
+            public enum Button
+            {
+                JONGKOK, BERDIRI, TENGKURAP, TERBANG
+            }
+        }
         static void Main(string[] args)
         {
+            Console.WriteLine("Masukan Perintah :");
+            string command = Console.ReadLine();
+            Move.Button button = Move.Button.JONGKOK;
+            while (command != "STOP")
+            {
+                switch (button)
+                {
+                    case Move.Button.JONGKOK:
+                        if (command == "S")
+                        {
+                            button = Move.Button.TENGKURAP;
+                            Console.WriteLine("tombol arah bawah ditekan");
+                        }
+                        break;
+
+                    case Move.Button.TENGKURAP:
+                        if (command == "W")
+                        {
+                            button = Move.Button.JONGKOK;
+                            Console.WriteLine("tombol arah atas ditekan");
+                        }
+                        break;
+
+                }
+                Console.WriteLine("Masukan Perintah : ");
+                command = Console.ReadLine();
+            }
             KodeBuah kodebuahNO = new KodeBuah();
 
             string kode1 = kodebuahNO.getKodeBuah("Apel");
