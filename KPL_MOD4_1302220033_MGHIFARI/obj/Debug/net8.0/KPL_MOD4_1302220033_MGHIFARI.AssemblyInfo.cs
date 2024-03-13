@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("KPL_MOD4_1302220033_MGHIFARI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+dd319e82089381460c18a74076d89c699dfe489d")]
 [assembly: System.Reflection.AssemblyProductAttribute("KPL_MOD4_1302220033_MGHIFARI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("KPL_MOD4_1302220033_MGHIFARI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
